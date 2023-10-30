@@ -5,6 +5,9 @@ $(document).ready(function() {
 	fetchBlogData();
 });
 
+document.addEventListener('DOMContentLoaded',fetchBlogData());
+
+
 function fetchBlogData() {
 	$.ajax({
 		url: 'http://localhost:20491/api/Blog/GetBlogs',
