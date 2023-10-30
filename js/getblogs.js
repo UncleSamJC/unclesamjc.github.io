@@ -1,16 +1,17 @@
 
-
+/*
 $(document).ready(function() {
 	$('.collection-wrap.w-dyn-items').empty();
 	fetchBlogData();
-});
+});*/
 
 document.addEventListener('DOMContentLoaded',fetchBlogData());
 
 
 function fetchBlogData() {
+	$('.collection-wrap.w-dyn-items').empty();
 	$.ajax({
-		url: 'http://localhost:20491/api/Blog/GetBlogs',
+		url: 'http://172.247.189.64/api/Blog/GetBlogs',
 		method: 'POST', // Use the appropriate HTTP method (GET, POST, etc.)
 		dataType: 'json', // Adjust this based on the response format from your backend
 		success: function(res) {
