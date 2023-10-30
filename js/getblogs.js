@@ -1,9 +1,9 @@
 
-/*
+
 $(document).ready(function() {
 	$('.collection-wrap.w-dyn-items').empty();
 	fetchBlogData();
-});*/
+});
 
 document.addEventListener('DOMContentLoaded',fetchBlogData());
 
